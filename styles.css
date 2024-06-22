@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* 부드러운 스크롤 추가 */
+}
+
+.text-main-title{font-weight: 800; font-size: 4rem; margin-top: -15px; margin-bottom: 20px; margin-left: 15%; margin-right: 15%;}
+.text-sub-title{font-weight: 600; font-size: 2rem; margin-bottom: -10px; margin-left: 15%; margin-right: 15%;}
+.text-normal-title{font-weight: 400; font-size: 1.2rem; margin-bottom: 0%; margin-top: 0%; margin-left: 15%; margin-right: 15%;}
+
+#text-title{
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+#text-title1{
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding-left: 200px;
+    text-align: left;
+}
+
+#title{
+    padding: 40px;
+}
+
+#title1{
+    padding-top: 300px;
+}
+
+#text{
+    font-weight: 400;
+    font-size: 1rm;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 20px;
+}
+
+#text1{
+    font-weight: 400;
+    font-size: 1rm;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-bottom: 20px;
+}
+
+#text2{
+    font-weight: 400;
+    font-size: 1rm;
+    padding-left: 200px;
+    padding-right: 500px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+#text3{
+    font-weight: 400;
+    font-size: 0.8rm;
+    padding: 20px;
+}
+
+#text4{
+    font-weight: 400;
+    font-size: 1rm;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 70px;
+}
+
+
+nav {
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffaa00; /* 호버 시 변경할 색상 */
+}
+
+.section-0{
+    padding: 30px 20px;
+    min-height: 100vh;
+    padding-top: 450px;
+    text-align: left;
+}
+
+.section-1{
+    padding: 100px;
+    min-height: 100vh;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.section-2{
+    padding: 100px;
+    text-align: center;
+}
+
+
+#section1 {
+    background: url('img/homebg.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* 옵션: 스크롤할 때 배경 고정 */
+    color: white; /* 텍스트 색상을 이미지와 대조되도록 변경 */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* 옵션: 텍스트에 그림자 추가 */
+}
+
+#section2 {
+    background: #e2e2e2;
+}
+
+#section3 {
+    background:url(img/me.png);
+    background-size: cover;
+    background-attachment: fixed; /* 옵션: 스크롤할 때 배경 고정 */
+    color: rgb(51, 51, 51); /* 텍스트 색상을 이미지와 대조되도록 변경 */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* 옵션: 텍스트에 그림자 추가 */
+}
+
+#section4 .hover-box {
+    position: relative; /* 자식 요소의 절대 위치 지정용 */
+    margin: 10px;
+    padding: 20px;
+    background: #d0d0d0;
+    flex: 1 1 calc(33.333% - 40px); /* 세 칸 배열 */
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s; /* 부드러운 전환 효과 */
+    cursor: pointer; /* 클릭 가능하게 보이기 */
+    overflow: hidden; /* 내용이 넘치지 않도록 */
+    border-radius: 10px;
+}
+
+#section4 .hover-box img {
+    width: 60%px;
+    height: flex; /* 이미지 비율을 유지 */
+    max-height: 150px; /* 원하는 최대 높이로 조정 */
+    object-fit: cover; /* 이미지가 박스에 맞게 조정되도록 */
+    margin-bottom: 10px; /* 이미지와 텍스트 사이 여백 */
+    border-radius: 10px;
+}
+
+#section4 .hover-box .hover-content {
+    position: absolute; /* 부모 요소에 절대 위치 지정 */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8); /* 반투명 배경 */
+    color: white;
+    opacity: 0; /* 초기 상태에서 숨기기 */
+    transition: opacity 0.3s; /* 부드러운 전환 효과 */
+    padding: 20px;
+    text-align: center;
+}
+
+#section4 .hover-box:hover {
+    transform: scale(1.05); /* 박스 확대 */
+    background: #ffffff; /* 배경색 변경 */
+    color: white; /* 텍스트 색상 변경 */
+}
+
+#section4 .hover-box:hover .hover-content {
+    opacity: 1; /* 호버 시 내용 표시 */
+}
+
+@media (max-width: 768px) {
+    #section4 .hover-box {
+        flex: 1 1 100%; /* 모바일에서는 한 칸 배열 */
+    }
+}
+
+
+#section5 {
+    background: #ffffff;
+}
+
+#section6 {
+    background:url(img/last.png);
+    background-size: cover;
+    background-attachment: fixed; /* 옵션: 스크롤할 때 배경 고정 */
+    color: rgb(51, 51, 51); /* 텍스트 색상을 이미지와 대조되도록 변경 */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* 옵션: 텍스트에 그림자 추가 */
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.text-group {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+    .menu-icon {
+        display: block;
+    }
+
+    .box {
+        flex: 1 1 100%;
+    }
+}
